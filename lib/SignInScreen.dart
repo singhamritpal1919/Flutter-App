@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_app/GroupCreationScreen.dart';
 import 'package:my_flutter_app/SignUpScreen.dart';
+import 'package:my_flutter_app/ResetPasswordScreen.dart';
 import 'auth_service.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -61,6 +62,14 @@ class _SignInScreenState extends State<SignInScreen> {
                 );
               },
               child: Text('Don\'t have an account? Sign Up'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ResetPasswordScreen()),
+                );
+              },
+              child: Text('Forgot Password? Reset Here'),
             ),
           ],
         ),
