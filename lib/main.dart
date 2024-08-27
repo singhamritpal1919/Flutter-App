@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:my_flutter_app/SignInScreen.dart';
+import 'package:my_flutter_app/SplashScreen.dart';
 
 import 'ChatScreen.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SignInScreen(),
+      home: SplashScreen(),
     );
   }
 }
